@@ -1,0 +1,43 @@
+.project {
+  display: flex;
+  margin: 2rem 0 10rem;
+}
+
+.project:first-of-type {
+  padding-top: 4rem;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+  padding-bottom: 10rem;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.description {
+  white-space: pre-line;
+}
+
+.content {
+  text-align: left;
+  width: 20vw;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+@media (max-width: 720px) {
+  .project {
+    display: block;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+    width: 75vw;
+  }
+}

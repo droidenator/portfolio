@@ -1,0 +1,82 @@
+.App,
+.App-header,
+.App-header a {
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+.App {
+  text-align: center;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: var(--color-primary);
+  min-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: var(--color-background);
+  padding: 0 1rem;
+}
+
+.App-header__home {
+  background-color: var(--color-background);
+}
+
+.App-header a {
+  color: var(--color-accent);
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.App-header a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: var(--color-accent);
+  transition: width 0.15s ease, background-color 0.5s ease-in;
+}
+
+.App-header__home a {
+  color: var(--color-primary);
+}
+
+.App-header__home a::after {
+  background-color: var(--color-primary);
+}
+
+.App-header a:hover::after {
+  width: 100%;
+}
+
+.App-header a:hover {
+  text-decoration: none;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.page-container {
+  width: 75vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+:root {
+  --color-primary: rgb(18, 64, 89);
+  --color-secondary: rgb(173, 118, 117);
+  --color-background: rgb(244, 140, 69);
+  --color-accent: rgb(145, 209, 223);
+}
