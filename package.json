@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://droidenator.github.io/",
+  "homepage": "https://droidenator.github.io/probable-umbrella/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
